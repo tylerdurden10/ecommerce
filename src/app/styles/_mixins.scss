@@ -1,0 +1,8 @@
+@mixin fontParams($family, $weight, $style, $size, $line_height, $color) {
+  font-family: $family;
+  font-weight: $weight;
+  font-style: $style;
+  font-size: $size;
+  line-height: $line_height;
+  color: $color;
+}

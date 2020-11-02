@@ -1,0 +1,26 @@
+@import '../../../styles/mixins.scss';
+
+.textInput {
+  width: 32rem;
+  height: 4.4rem;
+  padding: 1.2rem 0 1.3rem 1.3rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--dark-shade-25);
+  border-radius: 0.4rem;
+  @include fontParams(
+    var(--main-font),
+    400,
+    normal,
+    1.4rem,
+    2.4rem,
+    var(--dark-shade-50)
+  );
+
+  &:hover,
+  &:focus {
+    border: 0.1rem solid var(--dark-shade-50);
+    line-height: 2.4rem;
+    color: var(--dark-shade-75);
+    outline-width: 0;
+  }
+}
